@@ -15,24 +15,6 @@
     <name>feature-service</name>
     <description>feature-service</description>
 
-    <profiles>
-        <profile>
-            <id>spring-data-next-releasetrain</id>
-            <properties>
-                <spring-data-bom.version>2025.1.0-SNAPSHOT</spring-data-bom.version>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>spring-data-next</id>
-            <properties>
-                <spring-data-bom.version>2025.0.0-SNAPSHOT</spring-data-bom.version>
-            </properties>
-        </profile>
-
-    </profiles>
-
-
     <repositories>
         <repository>
             <id>central</id>

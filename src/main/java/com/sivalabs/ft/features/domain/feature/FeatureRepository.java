@@ -1,7 +1,10 @@
 package com.sivalabs.ft.features.domain.feature;
 
+import com.sivalabs.ft.features.domain.release.Release;
 import java.util.List;
 import java.util.Optional;
+import org.springframework.data.domain.ScoringFunction;
+import org.springframework.data.domain.SearchResult;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -21,4 +24,6 @@ public interface FeatureRepository extends ListCrudRepository<Feature, Long> {
     void deleteByReleaseCode(String code);
 
     boolean existsByCode(String code);
+
+    SearchResult<Feature> findByReleaseNear(Release release, ScoringFunction function);
 }

@@ -1,19 +1,18 @@
 package com.sivalabs.ft.features.domain.product;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+
 import com.sivalabs.ft.features.DatabaseConfiguration;
 import com.sivalabs.ft.features.EventPublisherTestConfiguration;
 import com.sivalabs.ft.features.domain.ResourceNotFoundException;
 import jakarta.persistence.EntityNotFoundException;
+import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.TestPropertySource;
-
-import java.util.Optional;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @SpringBootTest
 @Import({DatabaseConfiguration.class, EventPublisherTestConfiguration.class})

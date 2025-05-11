@@ -3,7 +3,6 @@ package com.sivalabs.ft.features.domain.product;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.sivalabs.ft.features.DatabaseConfiguration;
-
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
